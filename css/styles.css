@@ -269,6 +269,7 @@ img {
 .team-list-info {
   padding: 30px 59px;
   text-align: center;
+  background-color: var(--white-color);
 }
 
 .team-list-title {
