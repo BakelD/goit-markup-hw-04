@@ -101,6 +101,7 @@ img {
 
 .socials-list {
   display: flex;
+  justify-content: center;
   gap: 24px;
 
   width: 232px;
@@ -116,6 +117,7 @@ img {
   width: 40px;
   height: 40px;
   background-color: var(--accent-color);
+  color: var(--pale-bg-color);
   border-radius: 50%;
 
   transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
@@ -123,7 +125,11 @@ img {
 
 .socials-list-link:hover,
 .socials-list-link:focus {
-  background-color: var(--accent-color);
+  background-color: var(--hover-color);
+}
+
+.socials-list-icon {
+  fill: currentColor;
 }
 
 /* ---------------------------- header ----------------------------*/
