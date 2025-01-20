@@ -130,6 +130,7 @@ img {
 
 .header {
   border-bottom: 1px solid var(--pale-color);
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -166,8 +167,23 @@ img {
   margin-right: 40px;
 }
 
-.menu-list-item {
+.menu-list-link {
   position: relative;
+  display: block;
+  padding: 24px 0;
+  font-weight: 500;
+  color: var(--dark-color);
+
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-list-link:hover,
+.menu-list-link:focus {
+  color: var(--hover-color);
+}
+
+.menu-list-link.current {
+  color: var(--accent-color);
 }
 
 .current::after {
@@ -182,20 +198,6 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: var(--hover-color);
-}
-
-.menu-list-link {
-  display: block;
-  padding: 24px 0;
-  font-weight: 500;
-  color: var(--dark-color);
-
-  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-list-link:hover,
-.menu-list-link:focus {
-  color: var(--hover-color);
 }
 
 .address {
