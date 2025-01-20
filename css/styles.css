@@ -412,6 +412,7 @@ img {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-info-wrapper {
@@ -440,9 +441,13 @@ img {
   color: var(--white-color);
 }
 
+.footer-socials-info {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
 .footer .socials-list {
   gap: 16px;
-  margin-top: 16px;
 }
 
 .footer .socials-list-link:hover,
